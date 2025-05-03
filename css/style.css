@@ -1,0 +1,132 @@
+/* --font--famili--link--start */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font--famili--link--end-- */
+/* ---common--css--part--start--  */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+/* --common--css part--end-- */
+/*--- navber--part--start-- */
+:root{
+    --montserrat:"Montserrat", sans-serif;
+    --primary-color:#333333;
+    --brand-color:#054C73;
+    --manyuse-color:#F2F5FF;
+}
+.main_manu {
+    padding-top: 43px;
+    padding-bottom: 38px;
+}
+.main_manu a img{
+    width: 167px;
+}
+.main_manu ul {
+    gap: 73px;
+}
+.main_manu ul li a{
+    font-size: 14px;
+    font-weight: 600px;
+    font-family: var(--montserrat);
+    color: #333333 !important;
+    padding: 0 !important;
+    position: relative;
+}
+.main_manu ul li a::after{
+    content: " " ;
+    /* width: 0; */
+    width: 100%;
+    height: 2px;
+    background-color: var(--brand-color);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: all linear.4s;
+    transform: scale(0);
+}
+ .main_manu ul li a:hover::after{
+    /* width: 100%; */
+    transform: scale(1);
+ }  
+/* .main_manu ul li a:hover::after{
+    width: 100%;
+} */
+.main_manu ul li a:hover{
+    /* transform: rotate(-20deg); */
+    /* margin-top: -20px; */
+}
+/*--- navber part--end-- */
+/* --baner--part--seart */
+#banner{
+    background-image: url('../imges/banner.jpg');
+    padding-top: 152px;
+    padding-bottom: 154px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#banner .banner_box{
+    width: 643px;
+    padding: 40px 70px 38px 27px;
+    background-color: #DFE9F4;
+    margin-left: auto;
+}
+.banner_box h2{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--montserrat);
+    letter-spacing: 3px;
+    color: #333333;
+}
+.banner_box h1{
+    width: 421px;
+    font-size: 52px;
+    font-weight: 700;
+    font-family: var(--montserrat);
+    line-height: 65px;
+    color: #054C73;
+    margin: 20px 0;
+}
+.banner_box p{
+    width: 546px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--montserrat);
+    line-height: 39px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.banner_box a{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--montserrat);
+    padding: 25px 72px;
+    background-color: var(--brand-color);
+    color: #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+.banner_box .btn:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* --baner--part--seart */
